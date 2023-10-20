@@ -1,0 +1,87 @@
+<!-- FILEPATH: /c:/Users/Adithyakarthik/OneDrive/Documents/internship/hackathon/test.html -->
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+
+<form action="http://localhost:5000/">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    
+    <label for="pregnant">Pregnant:</label>
+    <div id="preg" style="display:flex">
+        <input type="radio" id="yes-preg" name="pregnant" value="yes">
+        <label for="yes-preg">Yes</label>
+        <input type="radio" id="no-preg" name="pregnant" value="no">
+        <label for="no-preg">No</label>
+    </div>
+
+    <div id="preg-count" style="display:none">
+        <label for="preg-count">Pregnancy Count:</label>
+        <input type="number" id="preg-count" name="preg-count">
+    </div>
+    
+    <label for="glucose">Glucose Level:</label>
+    <input type="number" id="glucose" name="glucose">
+    
+    <label for="blood-pressure">Blood Pressure:</label>
+    <input type="number" id="blood-pressure" name="blood-pressure">
+    
+    <label for="skin-thickness">Skin Thickness:</label>
+    <input type="number" id="skin-thickness" name="skin-thickness">
+    
+    <label for="insulin-level">Insulin Level:</label>
+    <input type="number" id="insulin-level" name="insulin-level">
+    
+    <label for="bmi">Do you know your BMI?</label>
+    <div id="bmin" style="display:flex">
+        <input type="radio" id="yes-bmi" name="bmi" value="yes">
+        <label for="yes-bmi">Yes</label>
+        <input type="radio" id="no-bmi" name="bmi" value="no">
+        <label for="no-bmi">No</label>
+    </div>
+    
+    <div id="bmi-input" style="display:none;">
+        <label for="bmi-value">BMI:</label>
+        <input type="number" id="bmi-value" name="bmi-value">
+    </div>
+    
+    <div id="height-weight-input" style="display:none;">
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height">
+        
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight">
+    </div>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    const bmiInput = document.getElementById("bmi-input");
+    const heightWeightInput = document.getElementById("height-weight-input");
+    const yesBmi = document.getElementById("yes-bmi");
+    const noBmi = document.getElementById("no-bmi");
+
+    const pregCount = document.getElementById("preg-count");
+    const yesPreg = document.getElementById("yes-preg");
+    const noPreg = document.getElementById("no-preg");
+
+    yesPreg.addEventListener("click", () => {
+        pregCount.style.display = "block";
+    });
+
+    noPreg.addEventListener("click", () => {
+        pregCount.style.display = "none";
+    });
+
+    
+    yesBmi.addEventListener("click", () => {
+        bmiInput.style.display = "block";
+        heightWeightInput.style.display = "none";
+    });
+    
+    noBmi.addEventListener("click", () => {
+        bmiInput.style.display = "none";
+        heightWeightInput.style.display = "block";
+    });
+</script>

@@ -1,0 +1,271 @@
+/* FILEPATH: /c:/Users/Adithyakarthik/OneDrive/Documents/internship/hackathon/style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style for the navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Style for the left side of the navigation bar */
+
+
+/* Style for the right side of the navigation bar */
+.right-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo in the navigation bar */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Style for the links in the navigation bar */
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style for the sections */
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 350px;
+    margin-right: 250px;
+}
+
+/* Style for the button */
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+/* Custom styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.right-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.right-nav li {
+    margin-left: 20px;
+}
+
+.right-nav a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right-nav a:hover {
+    color: #555;
+}
+
+/* Custom styles for the sections */
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+/* Custom styles for the first section */
+#Understanding-Diabetes {
+    background-color: #f2f2f2;
+}
+
+#Understanding-Diabetes h2 {
+    color: #333;
+}
+
+#Understanding-Diabetes p {
+    color: #555;
+}
+
+/* Custom styles for the second section */
+#Potential-Causes-of-Diabetes {
+    background-color: #fff;
+}
+
+#Potential-Causes-of-Diabetes h2 {
+    color: #333;
+}
+
+#Potential-Causes-of-Diabetes p {
+    color: #555;
+}
+
+#gen {
+    margin-left: 350px;
+    margin-right: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 40px;
+}
+
+/* Custom styles for the third section */
+#Importance-of-Getting-Checked {
+    background-color: #f2f2f2;
+}
+
+#Importance-of-Getting-Checked h2 {
+    color: #333;
+}
+
+#Importance-of-Getting-Checked p {
+    color: #555;
+}
+
+/* Custom styles for the fourth section */
+#Take-the-Test {
+    background-color: #fff;
+}
+
+#Take-the-Test h2 {
+    color: #333;
+}
+
+#Take-the-Test p {
+    color: #555;
+}
+
+#Take-the-Test .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#Take-the-Test .button:hover {
+    background-color: #555;
+}
+
+/* Custom styles for the left navigation bar */
+.l-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 60px);
+    background-color: #333;
+    overflow-y: auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.l-nav ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.l-nav li {
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    align-self: center;
+
+    
+    
+}
+
+.l-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.l-nav a:hover {
+    color: black;
+    background-color: white;
+}
